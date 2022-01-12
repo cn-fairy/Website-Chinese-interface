@@ -18,14 +18,13 @@ ___
 <br/> 1.在访问某个网站时鼠标左键点击CSDN·浏览器助手插件选择扩展脚本-管理面板-插件管理-自定义插件-添加插件
 <br/> ![](图片/csdn1.gif)
 <br/> 2.打开浏览器插件扩展管理选项，点击CSDN·浏览器助手详细信息-扩展选项--插件管理-自定义插件-添加插件  //不同浏览器名称可能不同
-
 * 添加插件：
 <br/> 点击添加插件按钮输入如下信息并点击确定
 ```
 插件名称：自定义
 插件类型：脚本插件
 ```
-确定后进入插件编辑界面
+* 确定后进入插件编辑界面
 <br/> 示例：
 <br/> ![](图片/csdn2.jpg)
 * 基本配置
@@ -35,8 +34,8 @@ ___
 ```
 https://www.joesandbox.com/*                  //仅限https协议
 *://www.joesandbox.com/*     //支持所有协议 *通配符
-```
-<br/> 外部资源：
+``` 
+* 外部资源：
 点击添加资源按钮，添加如下资源
 https://cdn.bootcdn.net/ajax/libs/timeago.js/4.0.2/timeago.full.min.js
 https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js

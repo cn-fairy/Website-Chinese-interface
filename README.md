@@ -35,6 +35,9 @@ ___
 ```
 https://www.joesandbox.com/*                  //仅限https协议
 *://www.joesandbox.com/*     //支持所有协议 *通配符
+登录页面子域名改变情况如：
+https://www.hackerone.com/*  //子域名存在限制
+https://*hackerone.com/*    //子域名不存在限制
 ``` 
 * 外部资源：
 点击添加资源按钮，添加如下资源

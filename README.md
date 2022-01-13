@@ -13,6 +13,7 @@ ___
 <br/> gitee地址:https://gitee.com/fairycn/Website-Chinese-interface
 # 使用方法
 ## 脚本管理器：CSDN·浏览器助手插件
+* 插件官网：https://plugin.csdn.net/
 * 可去浏览器插件下载或使用官方离线安装包
 * 打开CSDN·浏览器助手插件如下选项创建翻译脚本：
 进入csdn脚本添加入口方案示例：

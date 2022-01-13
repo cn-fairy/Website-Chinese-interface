@@ -11,21 +11,15 @@
 // @require             https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
 // ==/UserScript==
  
-
 function GM_xmlhttpRequest(){}
 function GM_getResourceText(){}
 (function() {
   'use strict';
- 
   const SUPPORT_LANG = ["zh-CN"];
   const lang = (navigator.language || navigator.userLanguage);
   const locales = getLocales(lang)
- 
-  translateByCssSelector();
-  translateDesc();
   traverseElement(document.body);
   watchUpdate();
- 
   function getLocales(lang) {
     if(lang.startsWith("zh")) { // zh zh-TW --> zh-CN
       lang = "zh-CN";
@@ -117,39 +111,5 @@ return lang_txt;
       characterData: true,
       childList: true,
     });
-  }
- 
-  // translate "about"
-  function translateDesc() {
-    $(".repository-content .f4").append("<br/>");
-    $("#translate-me").click(function() {
-      // get description text
-      const desc = $(".repository-content .f4")
-        .clone()
-        .children()
-        .remove()
-        .end()
-        .text()
-        .trim();
- 
-      if(!desc) {
-        return;
-      }
-
-    });
-  }  
- 
-  function translateByCssSelector() {
-    if(locales.css) {
-      for(var css of locales.css) {
-        if($(css.selector).length > 0) {
-          if(css.key === '!html') {
-            $(css.selector).html(css.replacement);
-          } else {
-            $(css.selector).attr(css.key, css.replacement);
-          }
-        }
-      }
-    }
   }
 })();
